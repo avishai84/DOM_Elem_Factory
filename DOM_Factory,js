@@ -1,0 +1,14 @@
+// https://github.com/avishai84/DOM_Elem_Factory.git
+
+function create(elem){
+    return document.createElement(elem);
+  }
+  
+  function createContentElem(elem, textToElem){
+    elem.innerText = textToElem;
+    return elem;
+  }
+  
+  function toDOM(elem){
+    return document.body.appendChild(elem);
+  }
